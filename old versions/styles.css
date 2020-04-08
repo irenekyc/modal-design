@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lobster';
+   
+}
+html 
+{
+    width:100vw;
+    height:100vh;
+    padding:0;
+    margin:0;
+    
+}
+.container {
+    padding:0;
+    margin:0;
+    width:100vw;
+    height:100vh;
+    background: url('coffee.jpg') no-repeat;
+    background-size:cover;
+    position:relative;
+}
+
+.session-title {
+    font-size:2rem;
+    line-height: 4rem;
+    letter-spacing: 0.5rem;
+    position:fixed;
+    top:0;
+    left:50%;
+    transform: translate(-50%, 25%);
+    text-transform: uppercase;
+}
+
+.session-container {
+    position: absolute;
+    top:4rem;
+    left:0;
+    width:100vw;
+    height:calc(100vh - 4rem);
+    display:flex;
+    justify-content: center;
+}
+
+.test-box{
+    width: 30%;
+    height:400px;
+    margin-top: auto;
+    margin-bottom:auto;
+    border-radius: 15px;
+}
+
+.test-box .test-cover{
+    height:200px;
+    width:100%;
+    background: transparent;
+    position: relative;
+    transform: translateY(100PX);
+    transition:1s;
+    z-index:10;
+    
+}
+
+.test-box .test-cover img{
+    height:100%;
+    width:auto;
+    border-radius: 15px;
+    opacity:0.6;
+    transition: 0.5s;
+}
+
+.test-box .test-cover p{
+    position: absolute;
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.test-box .test-cover ul{
+    position: absolute;
+
+    display:flex;
+   
+    bottom:10px;
+    color:yellow;
+  
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.test-box .test-cover ul li{
+    list-style:none;
+    margin: 1px;
+}
+.test-box .test-cover ul li i {
+    font-size:0.8rem;
+    line-height:1rem;
+}
+
+
+.test-details {
+    height:200px;
+    width:100%;
+    opacity:0;
+    filter: blur(3px);
+    transform: translateY(-200px);
+    transition:1s;
+    transition-delay: 0.5s;
+}
+.test-details i{
+    font-size:3rem;
+    line-height:4rem;
+    color: #999;
+    opacity:0.5;
+}
+
+.test-details .subtitle {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    line-height:3rem;
+    font-style:italic;
+}
+
+.test-box:hover .test-cover{
+    transform: translateY(0px);
+}
+.test-box:hover .test-cover img{
+    opacity:1;
+}
+
+.test-box:hover .test-details{
+    transform: translateY(0px);
+    opacity:1;
+    filter: blur(0);
+}
+
+
+
+
+
